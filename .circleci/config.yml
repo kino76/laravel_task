@@ -28,5 +28,6 @@ jobs:
             - ./vendor
           key: v1-dependencies-{{ checksum "backend/composer.json" }}
       - run:
+          working_directory: backend
           name: Run PHPUnit
-          command: cd backend & vendor/bin/phpunit
+          command: vendor/bin/phpunit
