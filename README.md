@@ -43,7 +43,7 @@ $ cp .env.example .env
 #### 各種コンテナの起動
 
 ```bash
-$ cd docker
+$ cd 
 $ docker compose up -d
 ```
 
@@ -98,3 +98,7 @@ $ php artisan config:clear
 $ php artisan route:clear
 $ php artisan view:clear
 ```
+
+### jsファイルの編集について
+- 実際に読み込まれるのは`backend/resources/js/app.js`になります
+- app.jsに反映させるためには、`npm run watch`を実行してコンパイルしてください。
